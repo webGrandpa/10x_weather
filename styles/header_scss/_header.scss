@@ -1,0 +1,61 @@
+@import '../mixins/mixins';
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    // background: url(/assets/dramatic-sky-mountain-silhouette-sunset-stunning-generated-by-ai\ 2.svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    @include display_prop(flex, space-evenly, center); 
+    background: rgba(255, 99, 71, 0);
+    padding:20px 0 40px 0;
+
+    >a{
+        @include font_prop ($logo-font, 32px, 800, rgba(226, 223, 223, 0.549));
+        font-family: $logo-font;
+        text-decoration: none;
+    }
+
+    >div{
+        .desktop-search {
+        @include display_prop(flex, center, center); 
+        border-radius: 8px;
+        padding: 7px 40px; 
+        background-color: #F5F5F5; 
+        gap: 10px;
+        opacity: 0.6;
+
+        input[type="text"] {
+            border: none; 
+            outline: none;
+            @include font_prop($main-font, 14px, 400, black); 
+            background-color: #F5F5F5;
+        }
+        button{
+            border: none;
+            a img { 
+                height: 15px; 
+            }
+
+        }   
+    }
+
+    .error-message{
+        @include font_prop($main-font, 14px, 400, $degree-color); 
+        text-align: center;
+        width: 100%;
+    }
+    }
+}
+

@@ -1,0 +1,17 @@
+//mixins
+@use '../mixins/mixins';
+
+//layout components
+
+@use '../header_scss/header';
+@use '../main_scss/main';
+
+//media quaeries
+
+@use '../media_scss/media';
+
+//topic
+
+@import '../mixins/video.css';
+
+@import '../mixins/loader.css'

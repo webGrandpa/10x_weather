@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Georgian:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Tiny5&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(/assets/dramatic-sky-mountain-silhouette-sunset-stunning-generated-by-ai\ 2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(255, 99, 71, 0);
+  padding: 20px 0 40px 0;
+}
+header > a {
+  font-family: "Anton", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: rgba(226, 223, 223, 0.549);
+  font-family: "Anton", sans-serif;
+  text-decoration: none;
+}
+header .desktop-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 7px 40px;
+  background-color: #F5F5F5;
+  gap: 10px;
+  opacity: 0.6;
+}
+header .desktop-search input[type=text] {
+  border: none;
+  outline: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  background-color: #F5F5F5;
+}
+header .desktop-search a img {
+  height: 15px;
+}/*# sourceMappingURL=header.css.map */

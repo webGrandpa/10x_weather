@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Georgian:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Tiny5&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+}
+main .city_prop {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+main .city_prop article {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 40px;
+}
+main .city_prop article .currentCity {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+main .city_prop article .cityDegree {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #FFA34E;
+}
+main .city_prop article .dayWeather {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+main .city_prop article .airQuality {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+main .city_prop > :nth-child(2) {
+  gap: 20px;
+}
+main .weather_details {
+  width: 80%;
+  padding: 40px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+main .weather_details > :nth-child(1) {
+  width: 35%;
+}
+main .weather_details > :nth-child(2) {
+  width: 70%;
+}
+main .weather_details > div {
+  height: 100%;
+}
+main .weather_details > div h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 0 20px 30px;
+}
+main .weather_details > div ul {
+  height: 100%;
+  padding: 0 0 0 -40px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+main .weather_details > div .dayly-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2fr, auto);
+}
+main .weather_details > div .dayly-details > li {
+  padding: 10px;
+  margin: 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+main .weather_details > div .dayly-details > li > :nth-child(1) {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+}
+main .weather_details > div .dayly-details > li > img {
+  width: 40px;
+}
+main .weather_details > div .dayly-details > li > :nth-child(3) {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFA34E;
+}
+main .weather_details > div .week-weather {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1fr, auto);
+}
+main .weather_details > div .week-weather > li {
+  list-style: none;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 20px 0;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+main .weather_details > div .week-weather > li > :nth-child(1) {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+}
+main .weather_details > div .week-weather > li > img {
+  width: 40px;
+}
+main .weather_details > div .week-weather > li > :nth-child(3) {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFA34E;
+}
+main .weather_details > div .week-weather > li .sunset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto Mono", monospace;
+  font-size: 10px;
+  font-weight: 400;
+  color: #FFA34E;
+}
+main .weather_details > div .week-weather > li .sunset > :nth-child(1) {
+  padding: 5px;
+  font-size: 12px;
+}
+main .weather_details > div .week-weather > li .sunset > div > img {
+  padding: 5px 10px;
+}/*# sourceMappingURL=main.css.map */
