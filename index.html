@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10x weather</title>
+    <link rel="stylesheet" href="./styles/styles/styles.css">
+    <!-- <script src="./js/app.js" type="module" defer></script> -->
+     <script src="./js/script.js" defer></script>
+     <!-- <script src="./js/index.js" defer></script> -->
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="./assets/bg/sunClouds.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div id="loader-wrapper">
+        <div class="loader"></div>
+        <p>Loading weather data...</p>
+    </div>
+    <header>
+        <a href="#">10x WEATHER</a>
+        <div>
+            <form class="desktop-search">
+                <input type="text" id="city-input" placeholder="Enter City Name">
+                <button type="submit" id="search-button">
+                    <a href="#"><img src="./assets/search_icon.svg" alt="Search Icon"></a>
+                </button>
+            </form>
+            <p id="error-message" class="error-message"></p>
+        </div>
+    </header>
+    <main>
+        <section class="city_prop">
+            <article>
+                <span class="currentCity">
+                    Batumi
+                </span>
+                <span class="cityDegree">
+                    28°C
+                </span>
+            </article>
+            <article>
+                <span class="weatherDescription">
+                    Sun 28°C - 26°C
+                </span>
+                <span class="airQuality">
+                    Air Quality : <span class="air-quality-status">Good</span>
+                </span>
+            </article>
+        </section>
+        <section class="weather_details">
+            <div>
+                <h2>Weather details</h2>
+                <ul class="dayly-details">
+                    <li>
+                        <span>Feels like</span>
+                        <img src="./assets/feelsLike.svg" alt="">
+                        <span class="feelsLike">26°C</span>
+                    </li>
+                    <li>
+                        <span>ENE wind</span>
+                        <img src="./assets/emewind.svg" alt="">
+                        <span class="windSpeed">13 km/h</span>
+                    </li>
+                    <li>
+                        <span>Humidity</span>
+                        <img src="./assets/humidity.svg" alt="">
+                        <span class="humidity">82%</span>
+                    </li>
+                    <li>
+                        <span>UV index</span>
+                        <img src="./assets/ultraviolet.svg" alt="">
+                        <span class="uvIndex">0</span>
+                    </li>
+                    <li>
+                        <span>Visibility</span>
+                        <img src="./assets/visibility.svg" alt="">
+                        <span class="visibility">4 km</span>
+                    </li>
+                    <li>
+                        <span>Pressure</span>
+                        <img src="./assets/pressure.svg" alt="">
+                        <span class="pressure">1022 hPa</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>7-day weather forecast</h2>
+                <ul class="week-weather">
+                </ul>
+            </div>
+        </section>
+    </main>
+    <aside>
+
+    </aside>
+
+</body>
+</html>
